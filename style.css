@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#menu {
+    background: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#menu .container ul {
+    list-style: none;
+    float: right;
+}
+
+#menu .container ul li {
+    float: left;
+}
+
+#menu .container ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    color: black;
+    font-size: 18px;
+}
+
+#menu .container .logo {
+    float: left;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#menu .container ul li a:hover {
+    color: maroon;
+}
+
+.showcase .showcase-content {
+    float: left;
+    width: 40%;
+    padding: 200px 30px;
+    font-size: 50px;
+}
+
+.showcase .showcase-image {
+    background: url('img/hero-1.jpg') no-repeat center center/cover;
+    width: 40%;
+    float: right;
+    height: 600px;
+}
+
+.box {
+    display: block;
+    font-size: 23px;
+    float: left;
+    text-align: center;
+    padding-left: 20px;
+
+}
+
+.clr {
+    clear: both;
+}
+
+
+.about .about-img {
+    background: url('img/hero-2.jpg') no-repeat center center/cover;
+    float: left;
+    width: 30%;
+    height: 600px;
+    padding-bottom: 20px;
+}
+
+.about .about-content {
+    float: right;
+    width: 60%;
+    padding-top: 70px;
+}
+
+.about-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.special h4 {
+    padding-top: 15px;
+}
+
+.special .special-image .image {
+    background: url('img/hero-1.jpg') no-repeat center center/cover;
+    height: 150px;
+    width: 180px;
+    padding-left: 10px;
+}
+
+.special .special-image {
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.special .special-image p {
+    padding-right: 20px;
+
+}
+
+#dishes {
+    margin-top: 200px;
+    background: whitesmoke;
+    padding: 2rem;
+}
+
+#dishes h5 {
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 18px;
+    color: maroon;
+    font-weight: normal;
+}
+
+#dishes h1 {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+#dishes .whole-dish {
+    display: flex;
+    padding: 1.5rem;
+}
+
+#dishes .whole-dish .dishes-image {
+    background: url('img/steak.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    box-shadow: 3px 3px 10px 1px rgb(190, 186, 186);
+}
+
+#dishes .whole-dish .dishes-content {
+    padding: 8%;
+    align-self: center;
+
+}
+
+#dishes .whole-dish .dishes-content .dishes-contents .line {
+    height: 2px;
+    width: 200px;
+    background: rgb(88, 88, 88);
+    align-self: center;
+}
+
+#dishes .whole-dish .dishes-content .dishes-contents h2 {
+    font-size: 40px;
+    padding-right: .5rem;
+}
+
+#dishes .whole-dish .dishes-content .dishes-contents {
+    display: flex;
+}
+
+#dishes .whole-dish .dishes-content .red {
+    padding-top: 1rem;
+    color: maroon;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+#dishes .whole-dish .dishes-content p {
+    font-weight: normal;
+    font-size: 1rem;
+
+}
+
+#dishes .whole-dish .dishes-content .dollar {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#dishes .whole-dish .dishes-image-one {
+    background: url('img/salmon-zucchini.jpg') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    margin-left: 4rem;
+    box-shadow: -3px -3px 10px 1px rgb(190, 186, 186);
+}
+
+#breakfast {
+    margin-top: 150px;
+}
+
+#breakfast h6 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#breakfast .tag {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: .5rem;
+
+}
+
+.grid .item img {
+    border-radius: 50%;
+}
+
+.grid .item {
+    margin-left: 3rem;
+    border-bottom: 2px #ddd dotted;
+    transition: img .3s ease-in-out;
+}
+
+.grid .item:hover img {
+    transform: scale(1.1);
+}
+
+.grid .item p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.carousel-inner .slide-img::before {
+    content: '';
+    background: url('img/testi-bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-inner .carousel-item .slider-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    font-size: 35px;
+    font-style: italic;
+
+}
+
+.carousel-inner .carousel-item .slider-content h6 {
+    color: maroon;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.carousel-inner .carousel-item .slider-content .last {
+    font-weight: normal;
+    font-size: 22px;
+    color: rgb(7, 7, 7);
+    font-style: oblique;
+}
+
+#card-make .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+}
+
+#card-make {
+    margin-top: 120px;
+}
+
+#card-make .primary {
+    text-align: center;
+    font-weight: normal;
+    padding-top: 1.5rem;
+}
+
+#card-make h6 {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card .primary-text {
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.card:hover .hide {
+    visibility: visible;
+    transform: translate(0, -12px);
+    transition: all 2s ease-in-out;
+    padding-bottom: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+form input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 10px 15px;
+}
+
+form label {
+    font-size: 20px;
+    display: block;
+    margin: 2px 15px;
+}
+
+#contact {
+    background: url('img/reservation-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    margin-top: 190px;
+    background-attachment: fixed;
+}
+
+#contact .contact-content {
+    background: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 560px;
+    transform: translate(100%, 20%);
+}
+
+#contact .primary {
+    text-align: center;
+    font-weight: normal;
+    color: maroon;
+    padding-top: 10px;
+}
+
+#contact h6 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.btn-one {
+    padding: 10px 20px;
+    background: rgb(243, 87, 87);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin: 10px 15px;
+}
+
+#several {
+    margin-top: 150px;
+}
+
+#several .several_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.2fr;
+}
+
+.several_content {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.days {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 10px;
+}
+
+.several_two {
+    padding-left: 25px;
+}
+
+.footer_content {
+    padding-right: 70px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.btn-last {
+    padding: 7px;
+    width: 100%;
+    background: rgb(243, 87, 87);
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-top: 10px;
+}
+
+.i {
+    padding: 7px;
+}
+
+.i:hover {
+    color: rgb(243, 87, 87);
+}
